@@ -1,0 +1,1 @@
+This is project for redux implementation for a project.
