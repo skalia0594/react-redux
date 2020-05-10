@@ -1,10 +1,14 @@
 import React from 'react';
-
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import DessertStore from './components/DessertStore'
 function App() {
   return (
-    <div className="App">
-      Bug detector
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <DessertStore />
+      </div>
+    </Provider>
   );
 }
 
